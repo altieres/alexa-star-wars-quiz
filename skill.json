@@ -1,0 +1,31 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "pt-BR": {
+          "summary": "Perguntas sobre Star Wars",
+          "examplePhrases": [
+            "Alexa abrir Star Wars",
+            "Alexa jogar Star Wars",
+            "Alexa iniciar Star Wars"
+          ],
+          "name": "Quiz Star Wars",
+          "description": "Quiz Star Wars é um jogo de perguntas e respostas para testar seus conhecimentos."
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Nenhuma instrução para teste.",
+      "category": "KNOWLEDGE_AND_TRIVIA",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom",
+          "uri": "ask-star-wars-default"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

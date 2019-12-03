@@ -1,0 +1,33 @@
+{
+  "deploy_settings": {
+    "default": {
+      "skill_id": "amzn1.ask.skill.9741454f-9b7a-4012-98c4-2ab9efea40b2",
+      "was_cloned": false,
+      "merge": {},
+      "resources": {
+        "manifest": {
+          "eTag": "4ac4ab4cfc5b3e1d13a927192d99312f"
+        },
+        "interactionModel": {
+          "pt-BR": {
+            "eTag": "22944bc27d9948dedb34581c48cdf1d5"
+          }
+        },
+        "lambda": [
+          {
+            "alexaUsage": [
+              "custom/default"
+            ],
+            "arn": "arn:aws:lambda:us-east-1:279809279753:function:ask-star-wars-default",
+            "awsRegion": "us-east-1",
+            "codeUri": "lambda/custom",
+            "functionName": "ask-star-wars-default",
+            "handler": "index.handler",
+            "revisionId": "d06cb00d-bd5d-48d1-b328-fe64b2e6589c",
+            "runtime": "nodejs8.10"
+          }
+        ]
+      }
+    }
+  }
+}
