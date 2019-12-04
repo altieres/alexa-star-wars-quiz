@@ -390,6 +390,11 @@ function helpTheUser(newGame, handlerInput) {
 
 /* jshint -W101 */
 const languageString = {
+  en: {
+    translation: {
+      QUESTIONS: questions.QUESTIONS_PT_BR,
+    }
+  },
   'pt-BR': {
     translation: {
       QUESTIONS: questions.QUESTIONS_PT_BR,
@@ -413,7 +418,7 @@ const languageString = {
       ANSWER_IS_MESSAGE: 'A resposta está ',
       TELL_QUESTION_MESSAGE: 'Questão %s. %s ',
       GAME_OVER_MESSAGE: 'Você acertou %s das %s questões. Obrigada por jogar!',
-      SCORE_IS_MESSAGE: 'Você está com %s pontos. '
+      SCORE_IS_MESSAGE: 'Sua pontuação é %s. '
     },
   },
 };
