@@ -413,7 +413,7 @@ const languageString = {
       ANSWER_IS_MESSAGE: 'A resposta está ',
       TELL_QUESTION_MESSAGE: 'Questão %s. %s ',
       GAME_OVER_MESSAGE: 'Você acertou %s das %s questões. Obrigada por jogar!',
-      SCORE_IS_MESSAGE: 'Sua pontuação é %s. '
+      SCORE_IS_MESSAGE: 'Você está com %s pontos. '
     },
   },
 };
@@ -834,7 +834,7 @@ const ErrorHandler = {
   },
   handle(handlerInput, error) {
     console.log(`Error handled: ${error.message}`);
-    let speechOutput = 'Sorry, I can\'t understand the command. Please say again.';
+    let speechOutput = 'Desculpe, não consegui entender o comando. Tente novamente.';
     const repromptText = speechOutput;
     if (supportsDisplay(handlerInput)) {
       let payload = {
