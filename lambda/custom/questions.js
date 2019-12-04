@@ -22,10 +22,10 @@ module.exports = {
       ]
     }, {
       'Qual é a cor do sabre dos Sith?': [
+        'Vermelho',
         'Azul',
         'Roxo',
         'Verde',
-        'Vermelho',
       ]
     }, {
       'O que Luke e Léia são?': [
