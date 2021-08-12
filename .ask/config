@@ -6,11 +6,11 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "4ac4ab4cfc5b3e1d13a927192d99312f"
+          "eTag": "f02f613df179271d717d385d2413c1cc"
         },
         "interactionModel": {
           "pt-BR": {
-            "eTag": "22944bc27d9948dedb34581c48cdf1d5"
+            "eTag": "715ab4c6c103cbfc6596a7cc0a3cfd92"
           }
         },
         "lambda": [
@@ -23,7 +23,7 @@
             "codeUri": "lambda/custom",
             "functionName": "ask-star-wars-default",
             "handler": "index.handler",
-            "revisionId": "d06cb00d-bd5d-48d1-b328-fe64b2e6589c",
+            "revisionId": "903712f5-ef43-4501-9ea9-f59ef02f08e1",
             "runtime": "nodejs8.10"
           }
         ]

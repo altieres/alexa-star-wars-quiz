@@ -388,39 +388,37 @@ function helpTheUser(newGame, handlerInput) {
   return handlerInput.responseBuilder.speak(speechOutput).reprompt(repromptText).getResponse();
 }
 
+const translationDataPtBr = {
+  translation: {
+    QUESTIONS: questions.QUESTIONS_PT_BR,
+    GAME_NAME: 'Star Wars',
+    HELP_MESSAGE: 'Eu vou perguntar pra você %s questões de múltipla escolha. Responda com o número da resposta. Por examplo, diga um, dois, três, ou quatro. Para iniciar um novo jogo a qualquer momento, diga, iniciar jogo. ',
+    REPEAT_QUESTION_MESSAGE: 'Para repetir a última pergunta, diga, repetir ',
+    ASK_MESSAGE_START: 'Gostaria de iniciar o jogo?',
+    HELP_REPROMPT: 'Para responder a uma pergunta, dia o número da resposta. ',
+    STOP_MESSAGE: 'Gostaria de continuar jogando?',
+    QUIT_MESSAGE: 'Tchau.',
+    CANCEL_MESSAGE: 'Ok, logo jogaremos novamente.',
+    NO_MESSAGE: 'Ok, vamos jogar em um outro momento. Até logo!',
+    TRIVIA_UNHANDLED: 'Tente dizer um número entre 1 e %s',
+    HELP_UNHANDLED: 'Diga sim para continuar, ou não para terminar o jogo.',
+    START_UNHANDLED: 'Diga iniciar para iniciar um novo jogo.',
+    NEW_GAME_MESSAGE: 'Bem vindo ao %s. ',
+    WELCOME_MESSAGE: 'Vou te perguntar %s questões, tente responder corretamente quantas conseguir. Apenas diga o número da resposta. Vamos começar. ',
+    ANSWER_CORRECT_MESSAGE: 'certa. ',
+    ANSWER_WRONG_MESSAGE: 'errada. ',
+    CORRECT_ANSWER_MESSAGE: 'A resposta correta é a %s: %s. ',
+    ANSWER_IS_MESSAGE: 'A resposta está ',
+    TELL_QUESTION_MESSAGE: 'Questão %s. %s ',
+    GAME_OVER_MESSAGE: 'Você acertou %s das %s questões. Obrigada por jogar!',
+    SCORE_IS_MESSAGE: 'Sua pontuação é %s. '
+  },
+};
+
 /* jshint -W101 */
 const languageString = {
-  en: {
-    translation: {
-      QUESTIONS: questions.QUESTIONS_PT_BR,
-    }
-  },
-  'pt-BR': {
-    translation: {
-      QUESTIONS: questions.QUESTIONS_PT_BR,
-      GAME_NAME: 'Star Wars',
-      HELP_MESSAGE: 'Eu vou perguntar pra você %s questões de múltipla escolha. Responda com o número da resposta. Por examplo, diga um, dois, três, ou quatro. Para iniciar um novo jogo a qualquer momento, diga, iniciar jogo. ',
-      REPEAT_QUESTION_MESSAGE: 'Para repetir a última pergunta, diga, repetir ',
-      ASK_MESSAGE_START: 'Gostaria de iniciar o jogo?',
-      HELP_REPROMPT: 'Para responder a uma pergunta, dia o número da resposta. ',
-      STOP_MESSAGE: 'Gostaria de continuar jogando?',
-      QUIT_MESSAGE: 'Tchau.',
-      CANCEL_MESSAGE: 'Ok, logo jogaremos novamente.',
-      NO_MESSAGE: 'Ok, vamos jogar em um outro momento. Até logo!',
-      TRIVIA_UNHANDLED: 'Tente dizer um número entre 1 e %s',
-      HELP_UNHANDLED: 'Diga sim para continuar, ou não para terminar o jogo.',
-      START_UNHANDLED: 'Diga iniciar para iniciar um novo jogo.',
-      NEW_GAME_MESSAGE: 'Bem vindo ao %s. ',
-      WELCOME_MESSAGE: 'Vou te perguntar %s questões, tente responder corretamente quantas conseguir. Apenas diga o número da resposta. Vamos começar. ',
-      ANSWER_CORRECT_MESSAGE: 'certa. ',
-      ANSWER_WRONG_MESSAGE: 'errada. ',
-      CORRECT_ANSWER_MESSAGE: 'A resposta correta é a %s: %s. ',
-      ANSWER_IS_MESSAGE: 'A resposta está ',
-      TELL_QUESTION_MESSAGE: 'Questão %s. %s ',
-      GAME_OVER_MESSAGE: 'Você acertou %s das %s questões. Obrigada por jogar!',
-      SCORE_IS_MESSAGE: 'Sua pontuação é %s. '
-    },
-  },
+  en: translationDataPtBr,
+  'pt-BR': translationDataPtBr,
 };
 
 
